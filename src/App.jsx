@@ -652,7 +652,7 @@ const matchesCity =
           <p>Tourism Information Platform</p>
         </div>
 
-        <p>© 2026 TravelBharat</p>
+        <p>© 2026 TravelBharat<br />Created by Sagnik Chatterjee</p>
 
       </footer>
 
