@@ -1,4 +1,4 @@
-# 🇮🇳 TravelBharat – Explore India, State by State
+<img width="863" height="762" alt="image" src="https://github.com/user-attachments/assets/8cc8ff20-12a7-4b56-8e8d-2a992f0f632d" /># 🇮🇳 TravelBharat – Explore India, State by State
 
 A full-stack tourism information web platform that helps users discover tourist destinations across India.
 
@@ -99,6 +99,10 @@ TravelBharat/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+
+
+
+
 ## 🔐 Authentication & Security
 
 TravelBharat uses JWT (JSON Web Token) authentication to secure the administrative features.
