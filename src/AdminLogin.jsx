@@ -12,7 +12,7 @@ async function handleLogin(event) {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/admin/login",
+      "https://travelbharat-qb9n.onrender.com/api/admin/login",
       {
         method: "POST",
         headers: {

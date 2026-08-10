@@ -25,7 +25,10 @@ router.post("/login", async (req, res) => {
     }
 
     const admin = await Admin.findOne({ username });
-
+console.log("ADMIN LOGIN:", {
+  username,
+  adminFound: !!admin,
+});
     if (!admin) {
       return res.status(401).json({
         message: "Invalid username or password",

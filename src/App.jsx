@@ -238,7 +238,7 @@ const [error, setError] = useState("");
 console.log("PLACES:", places);
 
  useEffect(() => {
-  fetch("http://localhost:5000/api/destinations")
+  fetch("https://travelbharat-qb9n.onrender.com/api/destinations")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to load destinations");

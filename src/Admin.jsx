@@ -27,7 +27,7 @@ const [loading, setLoading] = useState(true);
   const [editingId, setEditingId] = useState(null);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/destinations")
+  fetch("https://travelbharat-qb9n.onrender.com/api/destinations")
     .then((response) => response.json())
     .then((data) => {
       console.log("GET DESTINATIONS:", data);
@@ -84,7 +84,7 @@ const [newDestination, setNewDestination] = useState({
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/destinations",
+      "https://travelbharat-qb9n.onrender.com/api/destinations",
       {
         method: "POST",
         headers: getAuthHeaders(),
@@ -168,7 +168,7 @@ async function editDestination(event) {
     console.log("Updating destination:", newDestination);
 
     const response = await fetch(
-  `http://localhost:5000/api/destinations/${editingId}`,
+  `https://travelbharat-qb9n.onrender.com/api/destinations/${editingId}`,
   {
     method: "PUT",
    headers: getAuthHeaders(),
@@ -275,7 +275,7 @@ async function deleteDestination(id) {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/destinations/${id}`,
+     `https://travelbharat-qb9n.onrender.com/api/destinations/${id}`, 
       {
   method: "DELETE",
   headers: getAuthHeaders(),
