@@ -99,113 +99,167 @@ TravelBharat/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
-🔐 Authentication
-The admin section uses JWT authentication to protect administrative operations.
+## 🔐 Authentication & Security
 
-Administrators can securely manage destination information through the admin dashboard.
+TravelBharat uses JWT (JSON Web Token) authentication to secure the administrative features.
 
-Sensitive information such as database credentials and JWT secrets is stored using environment variables and is not included in the GitHub repository.
+The authentication process includes:
 
-🔌 API Endpoints
-Method	Endpoint	Purpose
-GET	/api/destinations	Get all destinations
-GET	/api/destinations/:id	Get one destination
-POST	/api/admin/login	Admin login
-POST	/api/destinations	Add destination
-PUT	/api/destinations/:id	Update destination
-DELETE	/api/destinations/:id	Delete destination
+- Secure admin login
+- JWT token generation
+- Protected admin routes
+- Token verification for protected requests
+- Secure password handling
+- Environment variables for sensitive configuration
 
+Sensitive credentials such as database connection strings and JWT secrets are stored in environment variables and are not committed to the repository.
 
+---
 
-Protected endpoints require JWT authentication.
+## 🔌 API Overview
 
-🧪 Testing
-The project was tested for:
+TravelBharat provides RESTful APIs for authentication and destination management.
 
-Admin login
-JWT authentication
-Add destination
-Edit destination
-Delete destination
-Search
-State filtering
-City filtering
-Category filtering
-Destination details
-Image display
-Google Maps integration
-Responsive design
-🚀 Future Enhancements
-Interactive India map
-Multilingual support
-Travel itinerary planner
-User reviews and ratings
-Hotel and transport integration
-Advanced travel search
-🎓 Internship Project
-Organization: Unified Mentor
+### Public APIs
 
-Internship: 2-Month Full Stack Web Development Internship
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/destinations` | Retrieve all destinations |
+| GET | `/api/destinations/:id` | Retrieve a specific destination |
 
-Year: 2026
+### Authentication API
 
-👨‍💻 Developer
-Sagnik Chatterjee
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/admin/login` | Authenticate administrator |
 
-📄 Project Documentation
-A detailed project report has been prepared covering the project objectives, features, architecture, database, APIs, authentication, testing, and future enhancements.
+### Protected APIs
 
-⭐ Project Highlights
-This project demonstrates practical experience in:
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/destinations` | Add a destination |
+| PUT | `/api/destinations/:id` | Update a destination |
+| DELETE | `/api/destinations/:id` | Delete a destination |
 
-Frontend development
-Backend development
-REST APIs
-MongoDB
-JWT authentication
-CRUD operations
-Responsive design
-Full-stack web development
-Web application deployment
-📌 License
+Protected APIs require a valid JWT token.
+
+---
+
+## 🗄️ Database
+
+MongoDB is used to store destination and administrator-related data.
+
+### Destination Information
+
+Each destination can contain:
+
+- Name
+- State
+- City
+- Category
+- Description
+- Historical significance
+- Images
+- Best time to visit
+- Entry fee
+- Timings
+- Nearby attractions
+- Location
+
+MongoDB Atlas is used for the deployed application.
+
+---
+
+## 🧪 Testing
+
+The application was tested across its major features, including:
+
+- Admin authentication
+- JWT authorization
+- Destination creation
+- Destination editing
+- Destination deletion
+- Destination search
+- State filtering
+- City filtering
+- Category filtering
+- Destination details
+- Image display
+- Nearby attractions
+- Google Maps integration
+- Responsive interface
+
+---
+
+## 📱 Responsive Design
+
+The TravelBharat interface is designed to provide a consistent experience across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+---
+
+## 🚀 Future Enhancements
+
+The platform can be extended with:
+
+- Interactive India map
+- Multilingual support
+- Travel itinerary planner
+- User reviews and ratings
+- Hotel and transport integration
+- Advanced destination search
+- Personalized travel recommendations
+
+---
+
+## 🎓 Internship Project
+
+**Organization:** Unified Mentor
+
+**Internship:** 2-Month Full Stack Web Development Internship
+
+**Project:** TravelBharat – Explore India, State by State
+
+**Year:** 2026
+
+---
+
+## 👨‍💻 Developer
+
+**Sagnik Chatterjee**
+
+Full Stack Web Development Intern
+
+---
+
+## 📄 Project Documentation
+
+A detailed project report has been prepared covering the project's objectives, features, architecture, database design, APIs, authentication, testing, limitations, and future enhancements.
+
+---
+
+## ⭐ Key Highlights
+
+TravelBharat demonstrates practical experience in:
+
+- Full-stack web development
+- React.js frontend development
+- Node.js and Express.js backend development
+- REST API development
+- MongoDB database integration
+- JWT authentication
+- CRUD operations
+- Responsive web design
+- Cloud deployment
+
+---
+
+## 📌 License
+
 This project was developed for educational and internship purposes.
-
-
----
-
-# STEP 6 — Save it
-
-After pasting, scroll to the **bottom of the GitHub page**.
-
-You'll see:
-
-**Commit changes**
-
-Click it.
-
-Then click **Commit changes** again if GitHub asks.
-
----
-
-# STEP 7 — Check the result
-
-Go back to your main repository page.
-
-Instead of:
-
-> React + Vite  
-> This template provides a minimal setup...
-
-you should now see:
-
-> 🇮🇳 **TravelBharat – Explore India, State by State**
-
-followed by your project description, features, technologies, etc.
-
-### That's all you need to do for README. ✅
-
-**Don't change `src`, `server`, `public`, or any other project files.**
-
-If you want, after you finish this, send me a **screenshot of the top part of your GitHub page**, and I'll tell you whether it looks professional before we do anything else.
 
 
