@@ -83,7 +83,7 @@ The project also includes an admin dashboard for managing destination informatio
 
 ## 📁 Project Structure
 
-```text
+<pre>
 TravelBharat/
 │
 ├── public/
@@ -99,7 +99,9 @@ TravelBharat/
 ├── package-lock.json
 ├── vite.config.js
 └── README.md
+</pre>
 
+---
 
 ## 🔐 Authentication & Security
 
@@ -206,7 +208,7 @@ TravelBharat is designed to provide a consistent experience across:
 
 ## 🚀 Future Enhancements
 
-Planned improvements include:
+The platform can be extended with:
 
 - Interactive India map
 - Multilingual support
