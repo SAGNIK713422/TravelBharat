@@ -1,4 +1,4 @@
-<img width="863" height="762" alt="image" src="https://github.com/user-attachments/assets/8cc8ff20-12a7-4b56-8e8d-2a992f0f632d" /># 🇮🇳 TravelBharat – Explore India, State by State
+# 🇮🇳 TravelBharat – Explore India, State by State
 
 A full-stack tourism information web platform that helps users discover tourist destinations across India.
 
@@ -83,7 +83,6 @@ The project also includes an admin dashboard for managing destination informatio
 
 ## 📁 Project Structure
 
-```text
 TravelBharat/
 │
 ├── public/
@@ -100,23 +99,22 @@ TravelBharat/
 ├── vite.config.js
 └── README.md
 
-
-
+---
 
 ## 🔐 Authentication & Security
 
-TravelBharat uses JWT (JSON Web Token) authentication to secure the administrative features.
+TravelBharat uses JWT (JSON Web Token) authentication to secure administrative features.
 
-The authentication process includes:
+The authentication system provides:
 
 - Secure admin login
 - JWT token generation
 - Protected admin routes
-- Token verification for protected requests
+- Token verification
 - Secure password handling
 - Environment variables for sensitive configuration
 
-Sensitive credentials such as database connection strings and JWT secrets are stored in environment variables and are not committed to the repository.
+Sensitive information such as database credentials and JWT secrets is stored in environment variables and is not included in the GitHub repository.
 
 ---
 
@@ -128,22 +126,22 @@ TravelBharat provides RESTful APIs for authentication and destination management
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/destinations` | Retrieve all destinations |
-| GET | `/api/destinations/:id` | Retrieve a specific destination |
+| GET | /api/destinations | Retrieve all destinations |
+| GET | /api/destinations/:id | Retrieve a specific destination |
 
 ### Authentication API
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | `/api/admin/login` | Authenticate administrator |
+| POST | /api/admin/login | Authenticate administrator |
 
 ### Protected APIs
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | `/api/destinations` | Add a destination |
-| PUT | `/api/destinations/:id` | Update a destination |
-| DELETE | `/api/destinations/:id` | Delete a destination |
+| POST | /api/destinations | Add a destination |
+| PUT | /api/destinations/:id | Update a destination |
+| DELETE | /api/destinations/:id | Delete a destination |
 
 Protected APIs require a valid JWT token.
 
@@ -170,13 +168,13 @@ Each destination can contain:
 - Nearby attractions
 - Location
 
-MongoDB Atlas is used for the deployed application.
+The deployed application uses MongoDB Atlas.
 
 ---
 
 ## 🧪 Testing
 
-The application was tested across its major features, including:
+The application was tested for its major features, including:
 
 - Admin authentication
 - JWT authorization
@@ -197,7 +195,7 @@ The application was tested across its major features, including:
 
 ## 📱 Responsive Design
 
-The TravelBharat interface is designed to provide a consistent experience across:
+TravelBharat is designed to provide a consistent experience across:
 
 - Desktop
 - Laptop
@@ -265,5 +263,3 @@ TravelBharat demonstrates practical experience in:
 ## 📌 License
 
 This project was developed for educational and internship purposes.
-
-
