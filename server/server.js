@@ -26,7 +26,10 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-.connect(process.env.MONGODB_URI)
+.connect(process.env.MONGODB_URI, {
+  dbName: "travelbharat",
+})
+
 
   .then(() => {
     console.log("MongoDB connected successfully");
